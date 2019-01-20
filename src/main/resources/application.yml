@@ -11,4 +11,4 @@ spring:
       url: jdbc:mysql://101.200.38.80:3306/frozenpower?characterEncoding=utf8&amp&useSSL=false
       username: root
       password: frozenpower
-
+#freemarker
