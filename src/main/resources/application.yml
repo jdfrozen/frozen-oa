@@ -1,0 +1,14 @@
+mybatis.configLocation: classpath:mybatis.xml
+mybatis.mapperLocations: classpath*:mapper/*.xml
+mybatis.typeAliasesPackage: com.frozen.frozenoa.dao
+
+#datasource
+spring.devtools.remote.restart.enabled: false
+spring:
+  datasource:
+      #type: com.alibaba.druid.pool.DruidDataSource
+      driverClassName: com.mysql.jdbc.Driver
+      url: jdbc:mysql://101.200.38.80:3306/frozenpower?characterEncoding=utf8&amp&useSSL=false
+      username: root
+      password: frozenpower
+
