@@ -11,4 +11,9 @@ spring:
       url: jdbc:mysql://101.200.38.80:3306/frozenpower?characterEncoding=utf8&amp&useSSL=false
       username: root
       password: frozenpower
-#freemarker
+# 模板引擎
+  thymeleaf:
+    mode: HTML
+    encoding: utf-8
+    # 禁用缓存
+    cache: false
