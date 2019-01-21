@@ -7,7 +7,6 @@
         <setting name="mapUnderscoreToCamelCase" value="true"/>
         <setting name="logImpl" value="SLF4J"/>
         <setting name="mapUnderscoreToCamelCase" value="false"/>
-        <setting name="logPrefix" value="dao."/>
     </settings>
 
     <typeAliases>

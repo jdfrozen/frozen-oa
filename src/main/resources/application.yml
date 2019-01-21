@@ -1,19 +1,52 @@
-mybatis.configLocation: classpath:mybatis.xml
-mybatis.mapperLocations: classpath*:mapper/*.xml
-mybatis.typeAliasesPackage: com.frozen.frozenoa.dao
+# 环境配置
+server:
+  # 服务端口
+  port: 80
+  servlet:
+    # 项目contextPath
+    context-path: /
+  tomcat:
+    # tomcat的URI编码
+    uri-encoding: UTF-8
+    # tomcat最大线程数，默认为200
+    max-threads: 800
+    # Tomcat启动初始化的线程数，默认值25
+    min-spare-threads: 30
+
+# MyBatis
+mybatis:
+ # 加载全局的配置文件
+  configLocation: classpath:mybatis.xml
+  # 配置mapper的扫描，找到所有的mapper.xml映射文件
+  mapperLocations: classpath*:mapper/*.xml
+  # 搜索指定包别名
+  typeAliasesPackage: com.frozen.frozenoa.dao
 
 #datasource
 spring.devtools.remote.restart.enabled: false
 spring:
-  datasource:
-      #type: com.alibaba.druid.pool.DruidDataSource
-      driverClassName: com.mysql.jdbc.Driver
-      url: jdbc:mysql://101.200.38.80:3306/frozenpower?characterEncoding=utf8&amp&useSSL=false
-      username: root
-      password: frozenpower
-# 模板引擎
+  #其他配置
+  profiles:
+      active: druid
+  # 模板引擎
   thymeleaf:
     mode: HTML
     encoding: utf-8
     # 禁用缓存
     cache: false
+  # 资源信息
+  messages:
+    # 国际化资源文件路径
+    basename: i18n/messages
+# 服务模块
+  devtools:
+    restart:
+      # 热部署开关
+      enabled: true
+
+# 日志配置
+logging:
+  level:
+    com.frozen.frozenoa.dao: debug
+    org.springframework: WARN
+    org.spring.springboot.dao: debug
