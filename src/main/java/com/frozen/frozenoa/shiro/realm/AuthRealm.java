@@ -24,9 +24,9 @@ public class AuthRealm extends AuthorizingRealm {
         String username = utoken.getUsername();
         SysUser sysUser =  sysUserService.selectUserByLoginName(username);
         //Password
-       String Password = sysUser.getPassword();
+       String password = sysUser.getPassword();
         //放入shiro.调用CredentialsMatcher类中检验密码
-        return new SimpleAuthenticationInfo(username, Password,this.getClass().getName());
+        return new SimpleAuthenticationInfo(username, password,this.getClass().getName());
     }
     //授权
     @Override
