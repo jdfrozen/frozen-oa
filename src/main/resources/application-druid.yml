@@ -4,9 +4,10 @@ spring:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.cj.jdbc.Driver
         druid:
-            url: jdbc:mysql://101.200.38.80:3306/frozenpower?characterEncoding=utf8&amp&useSSL=false
+            #url: jdbc:mysql://101.200.38.80:3306/frozenpower?characterEncoding=utf8&amp&useSSL=false
+            url: jdbc:mysql://127.0.0.1:3306/frozen_oa?characterEncoding=utf8&amp&useSSL=false
             username: root
-            password: frozenpower
+            password: 123456
             # 初始连接数
             initialSize: 5
             # 最小连接池数量
