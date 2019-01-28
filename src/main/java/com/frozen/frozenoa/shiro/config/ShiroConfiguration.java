@@ -1,7 +1,6 @@
 package com.frozen.frozenoa.shiro.config;
 
 import com.frozen.frozenoa.shiro.realm.AuthRealm;
-import com.frozen.frozenoa.shiro.realm.FrozenCredentialsMatcher;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
@@ -71,14 +70,8 @@ public class ShiroConfiguration {
     @Bean(name="authRealm")
     public AuthRealm authRealm() {
         AuthRealm authRealm=new AuthRealm();
-
         return authRealm;
     }
-//    //配置自定义的密码比较器
-//    @Bean(name="credentialsMatcher")
-//    public FrozenCredentialsMatcher credentialsMatcher() {
-//        return new FrozenCredentialsMatcher();
-//    }
     @Bean
     public LifecycleBeanPostProcessor lifecycleBeanPostProcessor(){
         return new LifecycleBeanPostProcessor();

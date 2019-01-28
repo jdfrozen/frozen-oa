@@ -1,8 +1,9 @@
-package com.frozen.frozenoa.utils;
+package com.frozen.frozenoa.shiro.utils;
 
 
 import com.frozen.frozenoa.po.SysUser;
 import com.frozen.frozenoa.shiro.realm.AuthRealm;
+import com.frozen.frozenoa.utils.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.crypto.SecureRandomNumberGenerator;
 import org.apache.shiro.mgt.RealmSecurityManager;
@@ -15,7 +16,7 @@ import org.springframework.beans.BeanUtils;
 /**
  * shiro 工具类
  * 
- * @author ruoyi
+ * @author Frozen
  */
 public class ShiroUtils
 {

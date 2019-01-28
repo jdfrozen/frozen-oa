@@ -17,7 +17,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @author ruoyi
  */
 @Component
-public class SysPasswordService
+public class ShiroPasswordService
 {
 //    @Autowired
 //    private CacheManager cacheManager;

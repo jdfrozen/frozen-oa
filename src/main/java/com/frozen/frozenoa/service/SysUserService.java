@@ -6,7 +6,6 @@ import com.frozen.frozenoa.constant.UserConstants;
 import com.frozen.frozenoa.dao.SysRoleMapper;
 import com.frozen.frozenoa.dao.SysUserMapper;
 import com.frozen.frozenoa.dao.SysUserRoleMapper;
-import com.frozen.frozenoa.exception.BusinessException;
 import com.frozen.frozenoa.po.SysRole;
 import com.frozen.frozenoa.po.SysUser;
 import com.frozen.frozenoa.po.SysUserRole;
@@ -25,9 +24,9 @@ import java.util.List;
  * @author ruoyi
  */
 @Service
-public class SysUserServiceImpl
+public class SysUserService
 {
-    private static final Logger log = LoggerFactory.getLogger(SysUserServiceImpl.class);
+    private static final Logger log = LoggerFactory.getLogger(SysUserService.class);
 
     @Autowired
     private SysUserMapper userMapper;

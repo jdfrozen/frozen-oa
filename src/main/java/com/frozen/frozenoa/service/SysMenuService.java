@@ -19,7 +19,7 @@ import java.util.*;
  * @author ruoyi
  */
 @Service
-public class SysMenuServiceImpl
+public class SysMenuService
 {
     public static final String PREMISSION_STRING = "perms[\"{0}\"]";
 

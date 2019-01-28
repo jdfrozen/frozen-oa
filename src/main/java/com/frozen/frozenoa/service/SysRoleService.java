@@ -20,7 +20,7 @@ import java.util.*;
  * @author ruoyi
  */
 @Service
-public class SysRoleServiceImpl
+public class SysRoleService
 {
     @Autowired
     private SysRoleMapper roleMapper;
