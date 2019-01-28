@@ -3,6 +3,7 @@ package com.frozen.frozenoa.shiro.realm;
 
 import com.frozen.frozenoa.po.SysUser;
 import com.frozen.frozenoa.service.SysUserServiceImpl;
+import com.frozen.frozenoa.shiro.service.SysPasswordService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
@@ -17,16 +18,23 @@ import java.util.Set;
 public class AuthRealm extends AuthorizingRealm {
     @Autowired
     private SysUserServiceImpl sysUserService;
+    @Autowired
+    SysPasswordService sysPasswordService;
     //认证.登录
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         UsernamePasswordToken utoken=(UsernamePasswordToken) token;//获取用户输入的token
         String username = utoken.getUsername();
+        String newPassword="";
+        if (utoken.getPassword() != null)
+        {
+            newPassword = new String(utoken.getPassword());
+        }
         SysUser sysUser =  sysUserService.selectUserByLoginName(username);
-        //Password
-       String password = sysUser.getPassword();
+
+        sysPasswordService.matches(sysUser,newPassword);
         //放入shiro.调用CredentialsMatcher类中检验密码
-        return new SimpleAuthenticationInfo(username, password,this.getClass().getName());
+        return new SimpleAuthenticationInfo(username, newPassword,this.getClass().getName());
     }
     //授权
     @Override
