@@ -1,5 +1,6 @@
 package com.frozen.frozenoa.shiro.config;
 
+import com.frozen.frozenoa.shiro.filter.OnlineSessionFilter;
 import com.frozen.frozenoa.shiro.realm.AuthRealm;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
@@ -8,10 +9,13 @@ import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.servlet.Filter;
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * shiro的配置类
@@ -20,28 +24,60 @@ import java.util.LinkedHashMap;
  */
 @Configuration
 public class ShiroConfiguration {
+    // Session超时时间，单位为毫秒（默认30分钟）
+    @Value("${shiro.session.expireTime}")
+    private int expireTime;
+
+    // 相隔多久检查一次session的有效性，单位毫秒，默认就是10分钟
+    @Value("${shiro.session.validationInterval}")
+    private int validationInterval;
+
+    // 验证码开关
+    @Value("${shiro.user.captchaEnabled}")
+    private boolean captchaEnabled;
+
+    // 验证码类型
+    @Value("${shiro.user.captchaType}")
+    private String captchaType;
+
+    // 设置Cookie的域名
+    @Value("${shiro.cookie.domain}")
+    private String domain;
+
+    // 设置cookie的有效访问路径
+    @Value("${shiro.cookie.path}")
+    private String path;
+
+    // 设置HttpOnly属性
+    @Value("${shiro.cookie.httpOnly}")
+    private boolean httpOnly;
+
+    // 设置Cookie的过期时间，秒为单位
+    @Value("${shiro.cookie.maxAge}")
+    private int maxAge;
+
+    // 登录地址
+    @Value("${shiro.user.loginUrl}")
+    private String loginUrl;
+
+    // 权限认证失败地址
+    @Value("${shiro.user.unauthorizedUrl}")
+    private String unauthorizedUrl;
+
     @Bean(name="shiroFilter")
-    public ShiroFilterFactoryBean shiroFilter(@Qualifier("securityManager") SecurityManager manager) {
-        ShiroFilterFactoryBean bean=new ShiroFilterFactoryBean();
-        bean.setSecurityManager(manager);
+    public ShiroFilterFactoryBean shiroFilter(@Qualifier("securityManager") SecurityManager securityManager) {
+        ShiroFilterFactoryBean shiroFilterFactoryBean=new ShiroFilterFactoryBean();
+        // Shiro的核心安全接口,这个属性是必须的
+        shiroFilterFactoryBean.setSecurityManager(securityManager);
         //配置登录的url和登录成功的url
-        bean.setLoginUrl("/login");
-        bean.setSuccessUrl("/home");
-        //配置访问权限
+        shiroFilterFactoryBean.setLoginUrl(loginUrl);
+        // 权限认证失败，则跳转到指定页面
+        shiroFilterFactoryBean.setUnauthorizedUrl(unauthorizedUrl);
+        // Shiro连接约束配置，即过滤链的定义
         LinkedHashMap<String, String> filterChainDefinitionMap=new LinkedHashMap<>();
-        filterChainDefinitionMap.put("/login*", "anon"); //表示可以匿名访问
-        filterChainDefinitionMap.put("/loginUser", "anon");
-        filterChainDefinitionMap.put("/client/test", "anon");
-        filterChainDefinitionMap.put("/assert/test", "anon");//添加白名单
-        filterChainDefinitionMap.put("/assert/get", "anon");//添加白名单
-        filterChainDefinitionMap.put("/assert/assertQuery", "anon");//添加白名单
-        filterChainDefinitionMap.put("/a", "anon");
-        filterChainDefinitionMap.put("/book/list", "anon");
-        filterChainDefinitionMap.put("/logout*","anon");
-        filterChainDefinitionMap.put("/druid*","anon");
         // 对静态资源设置匿名访问
         filterChainDefinitionMap.put("/favicon.ico**", "anon");
-        filterChainDefinitionMap.put("/ruoyi.png**", "anon");
+        filterChainDefinitionMap.put("/frozen.png**", "anon");
         filterChainDefinitionMap.put("/css/**", "anon");
         filterChainDefinitionMap.put("/docs/**", "anon");
         filterChainDefinitionMap.put("/fonts/**", "anon");
@@ -51,12 +87,21 @@ public class ShiroConfiguration {
         filterChainDefinitionMap.put("/ruoyi/**", "anon");
         filterChainDefinitionMap.put("/druid/**", "anon");
         filterChainDefinitionMap.put("/captcha/captchaImage**", "anon");
-        filterChainDefinitionMap.put("/jsp/login.jsp*","authc");
         filterChainDefinitionMap.put("/*", "authc");//表示需要认证才可以访问
         filterChainDefinitionMap.put("/**", "authc");//表示需要认证才可以访问
         filterChainDefinitionMap.put("/*.*", "authc");
-        bean.setFilterChainDefinitionMap(filterChainDefinitionMap);
-        return bean;
+        // 退出 logout地址，shiro去清除session
+        filterChainDefinitionMap.put("/logout", "logout");
+        filterChainDefinitionMap.put("/login", "anon");
+        // 系统权限列表
+        Map<String, Filter> filters = new LinkedHashMap<>();
+        filters.put("onlineSession", onlineSessionFilter());
+        shiroFilterFactoryBean.setFilters(filters);
+        // 所有请求需要认证
+        filterChainDefinitionMap.put("/**", "user,onlineSession");
+        shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
+
+        return shiroFilterFactoryBean;
     }
     //配置核心安全事务管理器
     @Bean(name="securityManager")
@@ -76,6 +121,7 @@ public class ShiroConfiguration {
     public LifecycleBeanPostProcessor lifecycleBeanPostProcessor(){
         return new LifecycleBeanPostProcessor();
     }
+
     @Bean
     public DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator(){
         DefaultAdvisorAutoProxyCreator creator=new DefaultAdvisorAutoProxyCreator();
@@ -87,5 +133,16 @@ public class ShiroConfiguration {
         AuthorizationAttributeSourceAdvisor advisor=new AuthorizationAttributeSourceAdvisor();
         advisor.setSecurityManager(manager);
         return advisor;
+    }
+
+    /**
+     * 自定义在线用户处理过滤器
+     */
+    @Bean
+    public OnlineSessionFilter onlineSessionFilter()
+    {
+        OnlineSessionFilter onlineSessionFilter = new OnlineSessionFilter();
+        onlineSessionFilter.setLoginUrl(loginUrl);
+        return onlineSessionFilter;
     }
 }

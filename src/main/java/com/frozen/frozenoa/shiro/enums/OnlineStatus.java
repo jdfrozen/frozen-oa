@@ -1,4 +1,4 @@
-package com.frozen.frozenoa.enums;
+package com.frozen.frozenoa.shiro.enums;
 
 /**
  * 用户会话

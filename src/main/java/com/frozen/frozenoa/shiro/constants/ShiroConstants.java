@@ -1,4 +1,4 @@
-package com.frozen.frozenoa.constant;
+package com.frozen.frozenoa.shiro.constants;
 
 /**
  * Shiro通用常量
