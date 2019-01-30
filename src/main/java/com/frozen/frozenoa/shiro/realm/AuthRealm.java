@@ -2,10 +2,8 @@ package com.frozen.frozenoa.shiro.realm;
 
 
 import com.frozen.frozenoa.po.SysUser;
-import com.frozen.frozenoa.shiro.service.ShiroMenuService;
-import com.frozen.frozenoa.shiro.service.ShiroRoleService;
-import com.frozen.frozenoa.shiro.service.ShiroUserService;
-import com.frozen.frozenoa.shiro.service.ShiroPasswordService;
+import com.frozen.frozenoa.shiro.service.ShiroLoginService;
+import com.frozen.frozenoa.shiro.service.ShiroPessionService;
 import com.frozen.frozenoa.shiro.utils.ShiroUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
@@ -20,28 +18,25 @@ import java.util.Set;
 
 public class AuthRealm extends AuthorizingRealm {
     @Autowired
-    ShiroUserService shiroUserService;
+    ShiroLoginService shiroLoginService;
     @Autowired
-    ShiroPasswordService shiroPasswordService;
-    @Autowired
-    ShiroMenuService shiroMenuService;
-    @Autowired
-    ShiroRoleService shiroRoleService;
+    ShiroPessionService shiroPessionService;
 
     //认证.登录
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         UsernamePasswordToken utoken = (UsernamePasswordToken) token;//获取用户输入的token
         String username = utoken.getUsername();
-        String newPassword = "";
+        String password = "";
         if (utoken.getPassword() != null) {
-            newPassword = new String(utoken.getPassword());
+            password = new String(utoken.getPassword());
         }
-        SysUser sysUser = shiroUserService.selectUserByLoginName(username);
-
-        shiroPasswordService.matches(sysUser, newPassword);
+        SysUser sysUser = shiroLoginService.login(username,password);
+        if(sysUser==null){
+            throw new UnknownAccountException("账号不存在或者密码错误");
+        }
         //放入shiro.调用CredentialsMatcher类中检验密码
-        return new SimpleAuthenticationInfo(username, newPassword, this.getClass().getName());
+        return new SimpleAuthenticationInfo(sysUser, password, this.getClass().getName());
     }
 
     //授权
@@ -54,12 +49,12 @@ public class AuthRealm extends AuthorizingRealm {
         Set<String> menus;
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
         // 管理员拥有所有权限
-        if (shiroRoleService.isAdmin(user.getUserId())) {
+        if (shiroPessionService.isAdmin(user.getUserId())) {
             info.addRole("admin");
             info.addStringPermission("*:*:*");
         } else {
-            roles = shiroRoleService.selectRoleKeys(user.getUserId());
-            menus = shiroMenuService.selectPermsByUserId(user.getUserId());
+            roles = shiroPessionService.selectRoleKeys(user.getUserId());
+            menus = shiroPessionService.selectPermsByUserId(user.getUserId());
             // 角色加入AuthorizationInfo认证对象
             info.setRoles(roles);
             // 权限加入AuthorizationInfo认证对象

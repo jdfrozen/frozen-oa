@@ -25,14 +25,13 @@ function login() {
             "password": password
         },
         success: function(r) {
-            var data =JSON.parse(r);
-            if (data.code == 0) {
+            if (r.code == 1) {
                 location.href = ctx + 'index';
             } else {
                 $.modal.closeLoading();
                 $('.imgcode').click();
                 $(".code").val("");
-                $.modal.msg(data.msg);
+                $.modal.msg(r.msg);
             }
         }
     });
