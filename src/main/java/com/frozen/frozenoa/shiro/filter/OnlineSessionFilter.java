@@ -40,7 +40,7 @@ public class OnlineSessionFilter extends AccessControlFilter
             SysUser user = ShiroUtils.getSysUser();
             return true;
         }
-        return false;
+        return true;
     }
 
     /**

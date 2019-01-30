@@ -8,6 +8,7 @@ import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSource
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -19,11 +20,14 @@ import java.util.Map;
 
 /**
  * shiro的配置类
- * @author sujin
+ * @author frozen
  *
  */
 @Configuration
 public class ShiroConfiguration {
+
+    public static final String PREMISSION_STRING = "perms[\"{0}\"]";
+
     // Session超时时间，单位为毫秒（默认30分钟）
     @Value("${shiro.session.expireTime}")
     private int expireTime;
@@ -76,23 +80,19 @@ public class ShiroConfiguration {
         // Shiro连接约束配置，即过滤链的定义
         LinkedHashMap<String, String> filterChainDefinitionMap=new LinkedHashMap<>();
         // 对静态资源设置匿名访问
-        filterChainDefinitionMap.put("/favicon.ico**", "anon");
-        filterChainDefinitionMap.put("/frozen.png**", "anon");
         filterChainDefinitionMap.put("/css/**", "anon");
         filterChainDefinitionMap.put("/docs/**", "anon");
         filterChainDefinitionMap.put("/fonts/**", "anon");
         filterChainDefinitionMap.put("/img/**", "anon");
         filterChainDefinitionMap.put("/ajax/**", "anon");
         filterChainDefinitionMap.put("/js/**", "anon");
-        filterChainDefinitionMap.put("/ruoyi/**", "anon");
         filterChainDefinitionMap.put("/druid/**", "anon");
-        filterChainDefinitionMap.put("/captcha/captchaImage**", "anon");
+        filterChainDefinitionMap.put("/login", "anon");
+        // 退出 logout地址，shiro去清除session
+        filterChainDefinitionMap.put("/logout", "logout");
         filterChainDefinitionMap.put("/*", "authc");//表示需要认证才可以访问
         filterChainDefinitionMap.put("/**", "authc");//表示需要认证才可以访问
         filterChainDefinitionMap.put("/*.*", "authc");
-        // 退出 logout地址，shiro去清除session
-        filterChainDefinitionMap.put("/logout", "logout");
-        filterChainDefinitionMap.put("/login", "anon");
         // 系统权限列表
         Map<String, Filter> filters = new LinkedHashMap<>();
         filters.put("onlineSession", onlineSessionFilter());
@@ -100,7 +100,6 @@ public class ShiroConfiguration {
         // 所有请求需要认证
         filterChainDefinitionMap.put("/**", "user,onlineSession");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
-
         return shiroFilterFactoryBean;
     }
     //配置核心安全事务管理器
@@ -118,7 +117,7 @@ public class ShiroConfiguration {
         return authRealm;
     }
     @Bean
-    public LifecycleBeanPostProcessor lifecycleBeanPostProcessor(){
+    public static LifecycleBeanPostProcessor lifecycleBeanPostProcessor(){
         return new LifecycleBeanPostProcessor();
     }
 
@@ -142,7 +141,7 @@ public class ShiroConfiguration {
     public OnlineSessionFilter onlineSessionFilter()
     {
         OnlineSessionFilter onlineSessionFilter = new OnlineSessionFilter();
-        onlineSessionFilter.setLoginUrl(loginUrl);
+        onlineSessionFilter.setLoginUrl("/login.html");
         return onlineSessionFilter;
     }
 }

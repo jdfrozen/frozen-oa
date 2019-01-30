@@ -72,6 +72,13 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- SpringBoot集成configuration -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
         <!--验证码 -->
         <dependency>
             <groupId>com.github.penggle</groupId>
