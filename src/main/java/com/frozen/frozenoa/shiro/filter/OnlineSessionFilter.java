@@ -1,15 +1,12 @@
 package com.frozen.frozenoa.shiro.filter;
 
 import com.frozen.frozenoa.po.SysUser;
-import com.frozen.frozenoa.shiro.constants.ShiroConstants;
-import com.frozen.frozenoa.shiro.enums.OnlineStatus;
+import com.frozen.frozenoa.shiro.config.ShiroUserProperties;
 import com.frozen.frozenoa.shiro.utils.ShiroUtils;
-import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.filter.AccessControlFilter;
 import org.apache.shiro.web.util.WebUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
@@ -17,16 +14,13 @@ import java.io.IOException;
 
 /**
  * 自定义访问控制
- * 
+ *
  * @author ruoyi
  */
 public class OnlineSessionFilter extends AccessControlFilter
 {
-    /**
-     * 强制退出后重定向的地址
-     */
-    @Value("${shiro.user.loginUrl}")
-    private String loginUrl;
+    @Autowired
+    ShiroUserProperties shiroUserProperties;
 
     /**
      * 表示是否允许访问；mappedValue就是[urls]配置中拦截器参数部分，如果允许访问返回true，否则false；
@@ -62,6 +56,6 @@ public class OnlineSessionFilter extends AccessControlFilter
     @Override
     protected void redirectToLogin(ServletRequest request, ServletResponse response) throws IOException
     {
-        WebUtils.issueRedirect(request, response, loginUrl);
+        WebUtils.issueRedirect(request, response, shiroUserProperties.getLoginUrl());
     }
 }

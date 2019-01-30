@@ -2,15 +2,13 @@ package com.frozen.frozenoa.shiro.config;
 
 import com.frozen.frozenoa.shiro.filter.OnlineSessionFilter;
 import com.frozen.frozenoa.shiro.realm.AuthRealm;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.mgt.SecurityManager;
-import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
-import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -23,50 +21,12 @@ import java.util.Map;
  * @author frozen
  *
  */
+@Slf4j
 @Configuration
 public class ShiroConfiguration {
 
-    public static final String PREMISSION_STRING = "perms[\"{0}\"]";
-
-    // Session超时时间，单位为毫秒（默认30分钟）
-    @Value("${shiro.session.expireTime}")
-    private int expireTime;
-
-    // 相隔多久检查一次session的有效性，单位毫秒，默认就是10分钟
-    @Value("${shiro.session.validationInterval}")
-    private int validationInterval;
-
-    // 验证码开关
-    @Value("${shiro.user.captchaEnabled}")
-    private boolean captchaEnabled;
-
-    // 验证码类型
-    @Value("${shiro.user.captchaType}")
-    private String captchaType;
-
-    // 设置Cookie的域名
-    @Value("${shiro.cookie.domain}")
-    private String domain;
-
-    // 设置cookie的有效访问路径
-    @Value("${shiro.cookie.path}")
-    private String path;
-
-    // 设置HttpOnly属性
-    @Value("${shiro.cookie.httpOnly}")
-    private boolean httpOnly;
-
-    // 设置Cookie的过期时间，秒为单位
-    @Value("${shiro.cookie.maxAge}")
-    private int maxAge;
-
-    // 登录地址
-    @Value("${shiro.user.loginUrl}")
-    private String loginUrl;
-
-    // 权限认证失败地址
-    @Value("${shiro.user.unauthorizedUrl}")
-    private String unauthorizedUrl;
+    @Autowired
+    ShiroUserProperties shiroUserProperties;
 
     @Bean(name="shiroFilter")
     public ShiroFilterFactoryBean shiroFilter(@Qualifier("securityManager") SecurityManager securityManager) {
@@ -74,9 +34,9 @@ public class ShiroConfiguration {
         // Shiro的核心安全接口,这个属性是必须的
         shiroFilterFactoryBean.setSecurityManager(securityManager);
         //配置登录的url和登录成功的url
-        shiroFilterFactoryBean.setLoginUrl(loginUrl);
+        shiroFilterFactoryBean.setLoginUrl(shiroUserProperties.getLoginUrl());
         // 权限认证失败，则跳转到指定页面
-        shiroFilterFactoryBean.setUnauthorizedUrl(unauthorizedUrl);
+        shiroFilterFactoryBean.setUnauthorizedUrl(shiroUserProperties.getUnauthorizedUrl());
         // Shiro连接约束配置，即过滤链的定义
         LinkedHashMap<String, String> filterChainDefinitionMap=new LinkedHashMap<>();
         // 对静态资源设置匿名访问
@@ -88,6 +48,7 @@ public class ShiroConfiguration {
         filterChainDefinitionMap.put("/js/**", "anon");
         filterChainDefinitionMap.put("/druid/**", "anon");
         filterChainDefinitionMap.put("/login", "anon");
+        filterChainDefinitionMap.put("/loginUser", "anon");
         // 退出 logout地址，shiro去清除session
         filterChainDefinitionMap.put("/logout", "logout");
         filterChainDefinitionMap.put("/*", "authc");//表示需要认证才可以访问
@@ -105,7 +66,7 @@ public class ShiroConfiguration {
     //配置核心安全事务管理器
     @Bean(name="securityManager")
     public SecurityManager securityManager(@Qualifier("authRealm") AuthRealm authRealm) {
-        System.err.println("--------------shiro已经加载----------------");
+        log.info("--------------shiro已经加载----------------");
         DefaultWebSecurityManager manager=new DefaultWebSecurityManager();
         manager.setRealm(authRealm);
         return manager;
@@ -116,17 +77,10 @@ public class ShiroConfiguration {
         AuthRealm authRealm=new AuthRealm();
         return authRealm;
     }
-    @Bean
-    public static LifecycleBeanPostProcessor lifecycleBeanPostProcessor(){
-        return new LifecycleBeanPostProcessor();
-    }
 
-    @Bean
-    public DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator(){
-        DefaultAdvisorAutoProxyCreator creator=new DefaultAdvisorAutoProxyCreator();
-        creator.setProxyTargetClass(true);
-        return creator;
-    }
+    /**
+     * 开启Shiro注解通知器
+     */
     @Bean
     public AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor(@Qualifier("securityManager") SecurityManager manager) {
         AuthorizationAttributeSourceAdvisor advisor=new AuthorizationAttributeSourceAdvisor();
@@ -141,7 +95,7 @@ public class ShiroConfiguration {
     public OnlineSessionFilter onlineSessionFilter()
     {
         OnlineSessionFilter onlineSessionFilter = new OnlineSessionFilter();
-        onlineSessionFilter.setLoginUrl("/login.html");
+        onlineSessionFilter.setLoginUrl(shiroUserProperties.getLoginUrl());
         return onlineSessionFilter;
     }
 }
