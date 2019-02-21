@@ -3,7 +3,7 @@ package com.frozen.frozenoa.shiro.realm;
 
 import com.frozen.frozenoa.po.SysUser;
 import com.frozen.frozenoa.shiro.service.ShiroLoginService;
-import com.frozen.frozenoa.shiro.service.ShiroPessionService;
+import com.frozen.frozenoa.shiro.service.ShiroPermissionsService;
 import com.frozen.frozenoa.shiro.utils.ShiroUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
@@ -13,14 +13,13 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.HashSet;
 import java.util.Set;
 
 public class AuthRealm extends AuthorizingRealm {
     @Autowired
     ShiroLoginService shiroLoginService;
     @Autowired
-    ShiroPessionService shiroPessionService;
+    ShiroPermissionsService shiroPermissionsService;
 
     //认证.登录
     @Override
@@ -49,12 +48,12 @@ public class AuthRealm extends AuthorizingRealm {
         Set<String> menus;
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
         // 管理员拥有所有权限
-        if (shiroPessionService.isAdmin(user.getUserId())) {
+        if (shiroPermissionsService.isAdmin(user.getUserId())) {
             info.addRole("admin");
             info.addStringPermission("*:*:*");
         } else {
-            roles = shiroPessionService.selectRoleKeys(user.getUserId());
-            menus = shiroPessionService.selectPermsByUserId(user.getUserId());
+            roles = shiroPermissionsService.selectRoleKeys(user.getUserId());
+            menus = shiroPermissionsService.selectPermsByUserId(user.getUserId());
             // 角色加入AuthorizationInfo认证对象
             info.setRoles(roles);
             // 权限加入AuthorizationInfo认证对象

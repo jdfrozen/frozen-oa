@@ -13,24 +13,24 @@ import java.util.Set;
  * @Description: 权限处理
  */
 @Service
-public class ShiroPessionService {
+public class ShiroPermissionsService {
     @Autowired
     SysMenuService sysMenuService;
+
+    @Autowired
+    SysRoleService sysRoleService;
+
     /**
-     * 根据用户ID查询权限
+     * 根据用户ID查询角色
      *
      * @param userId 用户ID
-     * @return 权限列表
+     * @return 权限角色
      */
 
     public Set<String> selectPermsByUserId(Long userId)
     {
         return sysMenuService.selectPermsByUserId(userId);
     }
-
-
-    @Autowired
-    SysRoleService sysRoleService;
 
     /**
      * 根据用户ID查询权限
