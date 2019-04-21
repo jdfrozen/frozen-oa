@@ -1,40 +1,79 @@
 package com.frozen.frozenadmin.config.security;
 
-import com.frozen.frozenadmin.service.UserDetailsServiceImpl;
-import org.springframework.context.annotation.Bean;
+import com.frozen.frozenadmin.config.security.authentication.MyAuthenticationFailureHandler;
+import com.frozen.frozenadmin.config.security.authentication.MyAuthenticationSuccessHandler;
+import com.frozen.frozenadmin.config.security.authentication.MyLogoutSuccessHandler;
+import com.frozen.frozenadmin.config.security.authentication.MyUserDetailsService;
+import com.frozen.frozenadmin.config.security.authorize.AuthenticationAccessDeniedHandler;
+import com.frozen.frozenadmin.config.security.authorize.CustomMetadataSource;
+import com.frozen.frozenadmin.config.security.authorize.UrlAccessDecisionManager;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.ObjectPostProcessor;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
 
+/**
+ * @Auther: Frozen
+ * @Date: 2019/4/20 19:21
+ * @Description:
+ */
 @Configuration
-public class WebSecurityConfig extends WebSecurityConfigurerAdapter  {
-    @Bean
-    UserDetailsService customUserService() {
-        return new UserDetailsServiceImpl();
-    }
+@EnableGlobalMethodSecurity(prePostEnabled = true)
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+    @Autowired
+    MyUserDetailsService myUserDetailsService;
+    @Autowired
+    CustomMetadataSource metadataSource;
+    @Autowired
+    UrlAccessDecisionManager urlAccessDecisionManager;
+    @Autowired
+    AuthenticationAccessDeniedHandler deniedHandler;
+
+    /**
+     * 配置认证逻辑——用户信息合法性校验（用户名密码校验）
+     * @param auth
+     * @tMyows Exception
+     */
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth
-                .userDetailsService(customUserService()).passwordEncoder(new MyPasswordEncoder());
+        auth.userDetailsService(myUserDetailsService)
+                .passwordEncoder(new BCryptPasswordEncoder());
     }
+
+    @Override
+    public void configure(WebSecurity web){
+        web.ignoring().antMatchers("/index.html", "/static/**", "/login_p", "/favicon.ico");
+    }
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .anyRequest().authenticated()
-                .and().formLogin().loginPage("/login1")
-                //设置默认登录成功跳转页面
-                .defaultSuccessUrl("/main").failureUrl("/login1?error").permitAll()
+                .withObjectPostProcessor(new ObjectPostProcessor<FilterSecurityInterceptor>() {
+                    @Override
+                    public <O extends FilterSecurityInterceptor> O postProcess(O o) {
+                        o.setSecurityMetadataSource(metadataSource);
+                        o.setAccessDecisionManager(urlAccessDecisionManager);
+                        return o;
+                    }
+                })
                 .and()
-                .logout()
-                //默认注销行为为logout，可以通过下面的方式来修改
-                .logoutUrl("/custom-logout")
-                //设置注销成功后跳转页面，默认是跳转到登录页面
-                .logoutSuccessUrl("/login1")
+                .formLogin().loginPage("/login_p").loginProcessingUrl("/login")
+                .usernameParameter("username").passwordParameter("password")
+                .failureHandler(new MyAuthenticationFailureHandler())
+                .successHandler(new MyAuthenticationSuccessHandler())
                 .permitAll()
                 .and()
-                .exceptionHandling()
-                .accessDeniedPage("/myerror");//无权访问;
+                .logout()
+                .logoutUrl("/logout")
+                .logoutSuccessHandler(new MyLogoutSuccessHandler())
+                .permitAll()
+                .and().csrf().disable()
+                .exceptionHandling().accessDeniedHandler(deniedHandler);
     }
 }
