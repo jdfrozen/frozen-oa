@@ -2,97 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="848b068b-c71e-4767-88ed-6b6b0d993fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/common/RespBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/WebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/authentication/MyAuthenticationFailureHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/authentication/MyAuthenticationSuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/authentication/MyLogoutSuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/authentication/MyUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/authorize/AuthenticationAccessDeniedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/authorize/CustomMetadataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/authorize/UrlAccessDecisionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/server/MenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/server/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/server/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/util/DateConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/util/EmailRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/util/HrUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/util/poi/PoiUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/vo/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/mybatis.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/css/app.49f3b09b9044ff2bb59028a0c595498b.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/css/app.49f3b09b9044ff2bb59028a0c595498b.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/css/app.4b7d8f4ce6caf32a8228060bf23032ae.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/css/app.4b7d8f4ce6caf32a8228060bf23032ae.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/fonts/element-icons.6f0a763.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/fonts/fontawesome-webfont.674f50d.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/fonts/fontawesome-webfont.af7ae50.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/fonts/fontawesome-webfont.b06871f.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/fonts/fontawesome-webfont.fee66e7.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/img/fontawesome-webfont.912ec66.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/0.35624cca2791df8b4b91.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/0.35624cca2791df8b4b91.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/0.99d9925e20b3bdd4f9fe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/0.99d9925e20b3bdd4f9fe.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/1.684e7cd018b419023dea.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/1.684e7cd018b419023dea.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/1.f2dbcf1fea4fd33c4ba0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/1.f2dbcf1fea4fd33c4ba0.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/2.14c5e132f1d43c005075.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/2.14c5e132f1d43c005075.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/2.630db73e9961e3e74165.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/2.630db73e9961e3e74165.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/3.f005d3d1f94072277c82.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/3.f005d3d1f94072277c82.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/3.f2af1e5f79c4750ed876.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/3.f2af1e5f79c4750ed876.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/4.1a590e21825d3917c4c6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/4.1a590e21825d3917c4c6.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/4.b25d67ddc90d6ac44980.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/4.b25d67ddc90d6ac44980.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/5.00192f6b258763152047.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/5.00192f6b258763152047.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/5.20b9d7b66b2dcf1d0f9b.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/5.20b9d7b66b2dcf1d0f9b.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/app.3ebb2e8e7f4aacd6bc3d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/app.3ebb2e8e7f4aacd6bc3d.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/app.a57c9a5cc2cb20a5c6f7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/app.a57c9a5cc2cb20a5c6f7.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/manifest.77a8347c841f03d14a2f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/manifest.77a8347c841f03d14a2f.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/manifest.a73163dfe24ce636c6d6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/manifest.a73163dfe24ce636c6d6.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/vendor.2855e9a84c2c26b4fa45.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/vendor.2855e9a84c2c26b4fa45.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/vendor.b6f6d144b8ab8460c96d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/static/static/js/vendor.b6f6d144b8ab8460c96d.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/templates/email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/test/java/com/frozen/frozenadmin/server/MenuRoleServiceTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/test/java/com/frozen/frozenadmin/server/MenuServiceTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/test/java/com/frozen/frozenadmin/server/RoleServiceTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/test/java/com/frozen/frozenadmin/server/UserRoleServiceTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen-admin/src/test/java/com/frozen/frozenadmin/server/UserServiceTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/common/RespBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/config/security/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/config/security/authentication/MyAuthenticationFailureHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/config/security/authentication/MyAuthenticationSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/config/security/authentication/MyLogoutSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/config/security/authentication/MyUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/config/security/authorize/AuthenticationAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/config/security/authorize/CustomMetadataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/config/security/authorize/UrlAccessDecisionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/dao/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/dao/MenuRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/dao/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/dao/UserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/po/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/po/MenuRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/po/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/po/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/po/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/util/DateConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/util/EmailRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/util/HrUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/util/poi/PoiUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/vo/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/mapper/MenuRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/mapper/UserRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/css/app.49f3b09b9044ff2bb59028a0c595498b.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/css/app.49f3b09b9044ff2bb59028a0c595498b.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/css/app.4b7d8f4ce6caf32a8228060bf23032ae.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/css/app.4b7d8f4ce6caf32a8228060bf23032ae.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/fonts/element-icons.6f0a763.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/fonts/fontawesome-webfont.674f50d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/fonts/fontawesome-webfont.af7ae50.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/fonts/fontawesome-webfont.b06871f.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/fonts/fontawesome-webfont.fee66e7.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/img/fontawesome-webfont.912ec66.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/0.35624cca2791df8b4b91.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/0.35624cca2791df8b4b91.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/0.99d9925e20b3bdd4f9fe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/0.99d9925e20b3bdd4f9fe.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/1.684e7cd018b419023dea.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/1.684e7cd018b419023dea.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/1.f2dbcf1fea4fd33c4ba0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/1.f2dbcf1fea4fd33c4ba0.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/2.14c5e132f1d43c005075.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/2.14c5e132f1d43c005075.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/2.630db73e9961e3e74165.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/2.630db73e9961e3e74165.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/3.f005d3d1f94072277c82.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/3.f005d3d1f94072277c82.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/3.f2af1e5f79c4750ed876.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/3.f2af1e5f79c4750ed876.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/4.1a590e21825d3917c4c6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/4.1a590e21825d3917c4c6.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/4.b25d67ddc90d6ac44980.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/4.b25d67ddc90d6ac44980.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/5.00192f6b258763152047.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/5.00192f6b258763152047.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/5.20b9d7b66b2dcf1d0f9b.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/5.20b9d7b66b2dcf1d0f9b.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/app.3ebb2e8e7f4aacd6bc3d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/app.3ebb2e8e7f4aacd6bc3d.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/app.a57c9a5cc2cb20a5c6f7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/app.a57c9a5cc2cb20a5c6f7.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/manifest.77a8347c841f03d14a2f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/manifest.77a8347c841f03d14a2f.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/manifest.a73163dfe24ce636c6d6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/manifest.a73163dfe24ce636c6d6.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/vendor.2855e9a84c2c26b4fa45.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/vendor.2855e9a84c2c26b4fa45.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/vendor.b6f6d144b8ab8460c96d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/static/static/js/vendor.b6f6d144b8ab8460c96d.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/templates/email.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frozen-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/MyPasswordEncoder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/WebMvcConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/controller/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/dao/Authority.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/dao/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/dao/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/dao/Userdao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/service/UserDetailsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen-admin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/frozen-admin/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen-admin/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen-admin/src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen-admin/src/main/resources/templates/myerror.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/dao/MenuRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/dao/MenuRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/server/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/server/RoleService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -104,8 +107,50 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frozen-admin/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="23" column="39" selection-start-line="18" selection-start-column="8" selection-end-line="23" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/resources/mapper/MenuMapper.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/common/RespBean.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="589">
+              <caret line="40" column="12" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zjjw-server/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -149,7 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frozen-admin/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/frozen-admin/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/frozen-admin/src/main/resources/templates/myerror.html" />
         <option value="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/WebMvcConfigurer.java" />
@@ -179,14 +223,12 @@
         <option value="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/service/UserService.java" />
         <option value="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/service/RoleService.java" />
         <option value="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/dao/UserRoleMapper.java" />
-        <option value="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/dao/MenuRoleMapper.java" />
         <option value="$PROJECT_DIR$/frozen-admin/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/po/User.java" />
         <option value="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/po/Menu.java" />
         <option value="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/po/MenuRole.java" />
         <option value="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/po/Role.java" />
         <option value="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/po/UserRole.java" />
-        <option value="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/server/RoleService.java" />
         <option value="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/dao/UserMapper.java" />
         <option value="$PROJECT_DIR$/frozen-admin/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/dao/RoleMapper.java" />
@@ -200,6 +242,9 @@
         <option value="$PROJECT_DIR$/frozen-admin/src/main/resources/mapper/MenuRoleMapper.xml" />
         <option value="$PROJECT_DIR$/frozen-admin/src/test/java/com/frozen/frozenadmin/server/MenuRoleServiceTests.java" />
         <option value="$PROJECT_DIR$/frozen-admin/src/test/java/com/frozen/frozenadmin/server/UserRoleServiceTests.java" />
+        <option value="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/dao/MenuRoleMapper.java" />
+        <option value="$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/server/RoleService.java" />
+        <option value="$PROJECT_DIR$/zjjw-server/pom.xml" />
       </list>
     </option>
   </component>
@@ -238,17 +283,18 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1010" />
-    <option name="height" value="1035" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="575" />
+    <option name="y" value="12" />
+    <option name="width" value="1490" />
+    <option name="height" value="1315" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,20 +302,31 @@
               <item name="frozen-oa" type="b2602c69:ProjectViewProjectNode" />
               <item name="frozen-oa" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="frozen-oa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frozen-oa" type="462c0819:PsiDirectoryNode" />
+              <item name="zjjw-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frozen-oa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frozen-oa" type="462c0819:PsiDirectoryNode" />
+              <item name="zjjw-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555840912934" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../frozen_power" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555844184697" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -427,7 +484,11 @@
       <workItem from="1555459248736" duration="78000" />
       <workItem from="1555774664149" duration="1072000" />
       <workItem from="1555775798499" duration="1770000" />
-      <workItem from="1555805842264" duration="24845000" />
+      <workItem from="1555805842264" duration="28418000" />
+      <workItem from="1566108596238" duration="779000" />
+      <workItem from="1566109438245" duration="41000" />
+      <workItem from="1566109499091" duration="6000" />
+      <workItem from="1566312793851" duration="596000" />
     </task>
     <servers />
   </component>
@@ -464,12 +525,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36190000" />
+    <option name="totallyTimeSpent" value="41185000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="460" y="10" width="1192" height="1052" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23391421" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.41975307" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -480,7 +541,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.25637394" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.11756374" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.11756374" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -488,7 +549,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Spring" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.11756374" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.14239131" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="14" />
@@ -545,57 +606,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/WebMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/MyPasswordEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/service/UserDetailsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/po/RoleExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/vo/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/util/poi/PoiUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3762">
-          <caret line="207" column="34" selection-start-line="207" selection-start-column="34" selection-end-line="207" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/util/HrUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -616,44 +626,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/common/CommonConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/util/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/WebMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/common/CommonConstants.java" />
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/util/R.java" />
     <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/util/DateConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/WebSocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -671,28 +649,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="63" column="18" lean-forward="true" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/controller/HomeController.java" />
     <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/common/RespBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-133">
@@ -727,60 +684,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/authentication/MyLogoutSuccessHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/authentication/MyAuthenticationSuccessHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/authentication/MyAuthenticationFailureHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
           <caret line="49" column="40" lean-forward="true" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/server/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/server/MenuService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -848,28 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/authentication/MyUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/server/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/resources/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -918,16 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/dao/MenuMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frozen-admin/src/test/java/com/frozen/frozenadmin/server/UserServiceTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -970,23 +845,6 @@
             <element signature="e#1555#1556#0" expanded="true" />
             <element signature="e#1580#1581#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/dao/MenuRoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/resources/mapper/MenuRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1043,6 +901,172 @@
             <element signature="e#2032#2033#0" expanded="true" />
             <element signature="e#2061#2062#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/appswork/maven-repository/repository/org/springframework/spring-core/5.0.8.RELEASE/spring-core-5.0.8.RELEASE.jar!/org/springframework/util/CollectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/dao/MenuMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/dao/MenuRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/resources/mapper/MenuRoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/server/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="61" column="38" lean-forward="true" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/server/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/server/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/authentication/MyAuthenticationFailureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/authentication/MyAuthenticationSuccessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/authentication/MyLogoutSuccessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/authentication/MyUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/security/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="63" column="18" lean-forward="true" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/src/main/java/com/frozen/frozenadmin/config/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frozen-admin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="39" selection-start-line="18" selection-start-column="8" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/resources/mapper/MenuMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/common/RespBean.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="40" column="12" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zjjw-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
         </state>
       </provider>
     </entry>
