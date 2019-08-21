@@ -1,7 +1,7 @@
-package com.frozen.frozenadmin.dao;
+package com.zjjw.zjjwserver.dao;
 
-import com.frozen.frozenadmin.po.MenuRole;
-import com.frozen.frozenadmin.po.UserRole;
+import com.zjjw.zjjwserver.po.MenuRole;
+import com.zjjw.zjjwserver.po.UserRole;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
