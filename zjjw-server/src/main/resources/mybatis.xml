@@ -12,6 +12,6 @@
 
     <typeAliases>
         <!-- 需要在实体类添加@Alias("别名") -->
-        <package name="com.zjjw.zjjwserver.bean"/>
+        <package name="com.zjjw.zjjwserver.po"/>
     </typeAliases>
 </configuration>

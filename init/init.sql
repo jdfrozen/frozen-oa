@@ -12,9 +12,9 @@ File Encoding         : 65001
 
 Date: 2018-02-05 11:25:15
 */
-CREATE DATABASE `frozen_oa` DEFAULT CHARACTER SET utf8;
+CREATE DATABASE `zjjw` DEFAULT CHARACTER SET utf8;
 
-USE `vhr`;
+USE `zjjw`;
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
@@ -922,7 +922,7 @@ begin
   declare pcount int;
   select count(*) into ecount from employee where departmentId=did;
   if ecount>0 then set result=-1;
-  else 
+  else
   select parentId into pid from department where id=did;
   delete from department where id=did and isParent=false;
   select row_count() into result;
