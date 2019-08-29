@@ -22,4 +22,6 @@ public interface UserMapper {
     List<User> listAll(@Param("pojo") User user);
 
     List<User> listByIds(@Param("ids") List<Long> ids);
+
+    List<User> getAllUser();
 }

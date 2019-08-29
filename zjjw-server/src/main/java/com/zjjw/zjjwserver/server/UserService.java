@@ -5,6 +5,8 @@ import com.zjjw.zjjwserver.po.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @Auther: zjjw
  * @Date: 2019/4/21 08:27
@@ -12,6 +14,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserService {
+
     @Autowired
     UserMapper userMapper;
 
@@ -29,5 +32,9 @@ public class UserService {
 
     public int delete(Long userId) {
         return userMapper.delete(userId);
+    }
+
+    public List<User> getAllUser(){
+        return userMapper.getAllUser();
     }
 }

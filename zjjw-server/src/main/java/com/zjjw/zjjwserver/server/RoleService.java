@@ -63,4 +63,12 @@ public class RoleService {
         }
         return roleMapper.listByIds(ids);
     }
+
+    /**
+     * 获取所有的角色
+     * @return
+     */
+    public List<Role> getAllRole(){
+        return roleMapper.getAllRole();
+    }
 }

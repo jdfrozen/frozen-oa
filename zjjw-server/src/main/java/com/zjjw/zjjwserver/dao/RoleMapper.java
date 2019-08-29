@@ -1,5 +1,6 @@
 package com.zjjw.zjjwserver.dao;
 
+import com.zjjw.zjjwserver.po.Menu;
 import com.zjjw.zjjwserver.po.Role;
 import com.zjjw.zjjwserver.po.User;
 import org.apache.ibatis.annotations.Mapper;
@@ -23,4 +24,6 @@ public interface RoleMapper {
     List<Role> listAll(@Param("pojo") Role pojo);
 
     List<Role> listByIds(@Param("ids") List<Long> ids);
+
+    List<Role> getAllRole();
 }

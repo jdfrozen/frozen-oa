@@ -89,4 +89,10 @@
       </foreach>
     </where>
   </select>
+
+  <select id="getAllRole" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List"/>
+    FROM role AS t
+  </select>
 </mapper>

@@ -118,4 +118,9 @@
         </where>
     </select>
 
+    <select id="getAllUser" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM user AS t
+    </select>
 </mapper>
