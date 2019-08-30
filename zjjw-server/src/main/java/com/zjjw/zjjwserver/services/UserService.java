@@ -1,4 +1,4 @@
-package com.zjjw.zjjwserver.server;
+package com.zjjw.zjjwserver.services;
 
 import com.zjjw.zjjwserver.dao.UserMapper;
 import com.zjjw.zjjwserver.po.User;

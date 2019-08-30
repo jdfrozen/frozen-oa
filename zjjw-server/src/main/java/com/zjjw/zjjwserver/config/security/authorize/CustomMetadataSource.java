@@ -2,8 +2,8 @@ package com.zjjw.zjjwserver.config.security.authorize;
 
 import com.zjjw.zjjwserver.po.Menu;
 import com.zjjw.zjjwserver.po.Role;
-import com.zjjw.zjjwserver.server.MenuService;
-import com.zjjw.zjjwserver.server.RoleService;
+import com.zjjw.zjjwserver.services.MenuService;
+import com.zjjw.zjjwserver.services.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.ConfigAttribute;
 import org.springframework.security.access.SecurityConfig;

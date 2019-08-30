@@ -2,26 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="848b068b-c71e-4767-88ed-6b6b0d993fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/FIMServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/enums/SystemCommandEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/handle/WebSocketHandle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/init/WebSocketChannelInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/AsyncMsgLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/MsgHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/CloseAIModelCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/EchoInfoCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/InnerCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/InnerCommandContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/OpenAIModelCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/PrefixSearchCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/PrintAllCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/PrintOnlineUsersCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/QueryHistoryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/ShutDownCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/util/SessionSocketHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/util/SpringBeanFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zjjw-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zjjw-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/FIMServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/FIMServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/config/security/authentication/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/config/security/authentication/MyUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/config/security/authorize/CustomMetadataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/config/security/authorize/CustomMetadataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/services/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/services/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zjjw-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zjjw-server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,42 +32,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/QueryHistoryCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/PrefixSearchCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/OpenAIModelCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/PrintOnlineUsersCommand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
@@ -88,25 +44,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/PrintAllCommand.java">
+        <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/services/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="190">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/InnerCommandContext.java">
+        <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/services/RoleService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="190">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/services/MenuService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -135,7 +94,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/CloseAIModelCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
+            <state relative-caret-position="374">
               <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -144,11 +103,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/FIMServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-94">
-              <caret line="82" column="49" lean-forward="true" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
+            <state relative-caret-position="301">
+              <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1222#1242#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/init/WebSocketChannelInitializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/handle/WebSocketHandle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-79">
+              <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -228,7 +212,6 @@
         <option value="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/vo/Employee.java" />
         <option value="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/config/security/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/zjjw-server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/zjjw-server/init/init.sql" />
         <option value="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/controller/MenuController.java" />
         <option value="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/controller/RoleController.java" />
@@ -255,6 +238,7 @@
         <option value="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/OpenAIModelCommand.java" />
         <option value="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/EchoInfoCommand.java" />
         <option value="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/CloseAIModelCommand.java" />
+        <option value="$PROJECT_DIR$/zjjw-server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/FIMServer.java" />
       </list>
     </option>
@@ -285,6 +269,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -333,35 +318,12 @@
               <item name="zjjw-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zjjwserver" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frozen-oa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frozen-oa" type="462c0819:PsiDirectoryNode" />
-              <item name="zjjw-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zjjwserver" type="462c0819:PsiDirectoryNode" />
-              <item name="handle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frozen-oa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frozen-oa" type="462c0819:PsiDirectoryNode" />
-              <item name="zjjw-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zjjwserver" type="462c0819:PsiDirectoryNode" />
-              <item name="init" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,7 +337,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555840912934" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fim" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -553,6 +515,7 @@
       <workItem from="1566994257801" duration="1097000" />
       <workItem from="1567043257559" duration="1444000" />
       <workItem from="1567081664305" duration="738000" />
+      <workItem from="1567131298921" duration="922000" />
     </task>
     <task id="LOCAL-00001" summary="修改注释">
       <created>1562551236394</created>
@@ -631,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567044678654</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="增加用户权限菜单">
+      <created>1567131395403</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1567131395404</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -667,13 +637,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55578000" />
+    <option name="totallyTimeSpent" value="56500000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2727882" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2600536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -684,7 +653,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.38668555" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.07790368" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.53541076" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -692,7 +661,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.21671388" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Spring" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.15439093" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.14872521" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="14" />
@@ -819,13 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/init/init.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -899,17 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/MenuService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/dao/RoleMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -935,20 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1227">
-          <caret line="71" column="31" lean-forward="true" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1026,28 +963,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/handle/WebSocketHandle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/enums/SystemCommandEnum.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/init/WebSocketChannelInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/ShutDownCommand.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1066,28 +983,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/QueryHistoryCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="374">
           <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/PrintOnlineUsersCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/PrintAllCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1106,8 +1003,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/OpenAIModelCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="374">
           <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/PrintAllCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1116,7 +1023,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/InnerCommandContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
+        <state relative-caret-position="704">
           <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1143,7 +1050,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/CloseAIModelCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
+        <state relative-caret-position="374">
           <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1151,10 +1058,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/server/command/PrintOnlineUsersCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/services/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/services/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/FIMServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-94">
-          <caret line="82" column="49" lean-forward="true" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
+        <state relative-caret-position="301">
+          <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1222#1242#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/init/WebSocketChannelInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zjjw-server/src/main/java/com/zjjw/zjjwserver/handle/WebSocketHandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

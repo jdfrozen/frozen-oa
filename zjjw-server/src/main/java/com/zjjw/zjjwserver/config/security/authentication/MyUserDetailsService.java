@@ -1,8 +1,8 @@
 package com.zjjw.zjjwserver.config.security.authentication;
 
 import com.zjjw.zjjwserver.po.Role;
-import com.zjjw.zjjwserver.server.RoleService;
-import com.zjjw.zjjwserver.server.UserService;
+import com.zjjw.zjjwserver.services.RoleService;
+import com.zjjw.zjjwserver.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;

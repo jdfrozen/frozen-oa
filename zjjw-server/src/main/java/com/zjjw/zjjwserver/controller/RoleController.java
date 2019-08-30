@@ -1,7 +1,7 @@
 package com.zjjw.zjjwserver.controller;
 
 import com.zjjw.zjjwserver.po.Role;
-import com.zjjw.zjjwserver.server.RoleService;
+import com.zjjw.zjjwserver.services.RoleService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
