@@ -1,6 +1,6 @@
-package com.zjjw.zjjwserver.init;
+package com.zjjw.zjjwserver.server.init;
 
-import com.zjjw.zjjwserver.handle.WebSocketHandle;
+import com.zjjw.zjjwserver.server.handle.WebSocketHandle;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;

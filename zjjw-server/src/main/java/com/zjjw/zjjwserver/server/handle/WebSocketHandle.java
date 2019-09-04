@@ -1,4 +1,4 @@
-package com.zjjw.zjjwserver.handle;
+package com.zjjw.zjjwserver.server.handle;
 
 import com.zjjw.zjjwserver.server.MsgHandler;
 import com.zjjw.zjjwserver.util.SessionSocketHolder;

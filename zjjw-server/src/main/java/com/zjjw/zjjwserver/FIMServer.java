@@ -1,6 +1,6 @@
 package com.zjjw.zjjwserver;
 
-import com.zjjw.zjjwserver.init.WebSocketChannelInitializer;
+import com.zjjw.zjjwserver.server.init.WebSocketChannelInitializer;
 import com.zjjw.zjjwserver.util.SessionSocketHolder;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

@@ -28,4 +28,9 @@ public class IndexController {
         log.info("allMenu={}", Arrays.toString(menuService.getAllMenu().toArray()));
         return "success";
     }
+
+    @RequestMapping(value = "index")
+    public String index(){
+        return "/index";
+    }
 }
