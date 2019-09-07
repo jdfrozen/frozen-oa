@@ -173,13 +173,43 @@ CREATE TABLE `sys_user_info` (
 	`birthday` timestamp NULL DEFAULT NULL COMMENT '生日',
 	`occupation` varchar(16) NOT NULL COMMENT '职业',
 	`hometown` varchar(128) DEFAULT NULL COMMENT '家乡',
-	`evaluate_mark` varchar(128) DEFAULT NULL COMMENT '企业评价标记',
+	`email` varchar(16) NOT NULL COMMENT '邮箱',
+	`phone` varchar(16) NOT NULL COMMENT '手机号',
+	`wechat` varchar(16) NOT NULL COMMENT '微信',
+	`qq` varchar(16) NOT NULL COMMENT 'qq',
 	`is_delete` int(2) DEFAULT '0' COMMENT '是否删除',
 	`create_time` timestamp NULL DEFAULT NULL,
 	`update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
 	`remark` varchar(500) DEFAULT '' COMMENT '备注',
 	PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COMMENT='用户基本信息表';
+
+DROP TABLE IF EXISTS `sys_user_relation`;
+CREATE TABLE `sys_user_relation` (
+	`id` bigint(20) NOT NULL AUTO_INCREMENT,
+	`user_id` bigint(20) NOT NULL COMMENT '用户ID',
+	`relation_user_id` bigint(20) NOT NULL COMMENT '关系用户ID',
+	`age` int(4) DEFAULT NULL COMMENT '年龄',
+	`is_delete` int(2) DEFAULT '0' COMMENT '是否删除',
+	`create_time` timestamp NULL DEFAULT NULL,
+	`update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+	`remark` varchar(500) DEFAULT '' COMMENT '备注',
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COMMENT='用户关系表';
+
+DROP TABLE IF EXISTS `sys_user_resume`;
+CREATE TABLE `sys_user_resume` (
+	`id` bigint(20) NOT NULL AUTO_INCREMENT,
+	`user_id` bigint(20) NOT NULL COMMENT '用户ID',
+	`impression_score` int(8) DEFAULT NULL COMMENT '印象分',
+	`skill` varchar(16) NOT NULL COMMENT '技能',
+	`education` varchar(16) NOT NULL COMMENT '教育经历',
+	`is_delete` int(2) DEFAULT '0' COMMENT '是否删除',
+	`create_time` timestamp NULL DEFAULT NULL,
+	`update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+	`remark` varchar(500) DEFAULT '' COMMENT '备注',
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COMMENT='用户简历信息表';
 
 DROP TABLE IF EXISTS `sys_user_dynamic`;
 CREATE TABLE `sys_user_dynamic` (
