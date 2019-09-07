@@ -246,6 +246,19 @@ CREATE TABLE `sys_user_resume` (
 	PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COMMENT='用户简历信息表';
 
+DROP TABLE IF EXISTS `sys_user_education`;
+CREATE TABLE `sys_user_education` (
+	`id` bigint(20) NOT NULL AUTO_INCREMENT,
+	`user_id` bigint(20) NOT NULL COMMENT '用户ID',
+	`school` varchar(16) NOT NULL COMMENT '学校',
+	`education` varchar(16) NOT NULL COMMENT '教育经历',
+	`is_delete` int(2) DEFAULT '0' COMMENT '是否删除',
+	`create_time` timestamp NULL DEFAULT NULL,
+	`update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+	`remark` varchar(500) DEFAULT '' COMMENT '备注',
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COMMENT='用户教育经历表';
+
 DROP TABLE IF EXISTS `sys_user_dynamic`;
 CREATE TABLE `sys_user_dynamic` (
 	`id` bigint(20) NOT NULL AUTO_INCREMENT,
