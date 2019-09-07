@@ -80,7 +80,21 @@ CREATE TABLE `sys_menu_role` (
 ) ENGINE=InnoDB AUTO_INCREMENT=278 DEFAULT CHARSET=utf8;
 
 
-SET FOREIGN_KEY_CHECKS=0;
+
+DROP TABLE IF EXISTS `sys_company_info`;
+CREATE TABLE `sys_company_info` (
+	`id` bigint(20) NOT NULL AUTO_INCREMENT,
+	`company_name` varchar(32) COMMENT '企业名称',
+	`is_list` int(2) DEFAULT '0' COMMENT '是否上市',
+	`base_info` varchar(500)  COMMENT '基本信息',
+	`city` varchar(32) COMMENT '城市',
+	`financing` varchar(32) COMMENT '融资',
+	`is_delete` int(2) DEFAULT '0' COMMENT '是否删除',
+	`create_time` timestamp NULL DEFAULT NULL,
+	`update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+	`remark` varchar(500) DEFAULT '' COMMENT '备注',
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='企业信息表';
 
 DROP TABLE IF EXISTS `sys_company_dynamic`;
 CREATE TABLE `sys_company_dynamic` (
@@ -107,6 +121,7 @@ CREATE TABLE `sys_company_evaluate` (
 	`not_recommend` int(8) DEFAULT '0' COMMENT '不推荐数量',
 	`not_recommend_reason` varchar(500) DEFAULT NULL COMMENT '不推荐原因',
 	`acclaim_probability` varchar(16) DEFAULT NULL COMMENT '好评率',
+	`praise` int(8) DEFAULT '0' COMMENT '点赞',
 	`is_delete` int(2) DEFAULT '0' COMMENT '是否删除',
 	`create_time` timestamp NULL DEFAULT NULL,
 	`update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
@@ -114,18 +129,17 @@ CREATE TABLE `sys_company_evaluate` (
 	PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='企业评价表';
 
-DROP TABLE IF EXISTS `sys_company_info`;
+DROP TABLE IF EXISTS `sys_company_knock_out`;
 CREATE TABLE `sys_company_info` (
 	`id` bigint(20) NOT NULL AUTO_INCREMENT,
-	`company_name` varchar(32) COMMENT '企业名称',
-	`is_list` int(2) DEFAULT '0' COMMENT '是否上市',
-	`base_info` varchar(500)  COMMENT '基本信息',
+	`company_id` bigint(20) NOT NULL COMMENT '企业ID',
+	`knock_out_info` varchar(128)  COMMENT '爆料信息',
 	`is_delete` int(2) DEFAULT '0' COMMENT '是否删除',
 	`create_time` timestamp NULL DEFAULT NULL,
 	`update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
 	`remark` varchar(500) DEFAULT '' COMMENT '备注',
 	PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='企业信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='企业爆料表';
 
 DROP TABLE IF EXISTS `sys_company_product`;
 CREATE TABLE `sys_company_product` (
@@ -140,18 +154,19 @@ CREATE TABLE `sys_company_product` (
 	PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='企业产品表';
 
-DROP TABLE IF EXISTS `sys_company_recruit`;
-CREATE TABLE `sys_company_recruit` (
+DROP TABLE IF EXISTS `sys_company_position`;
+CREATE TABLE `sys_company_position` (
 	`id` bigint(20) NOT NULL AUTO_INCREMENT,
 	`company_id` bigint(20) NOT NULL COMMENT '企业ID',
-	`recruit_name` varchar(128) COMMENT '职位名称',
-	`recruit_info` varchar(128) COMMENT '职位信息',
+	`position_name` varchar(128) COMMENT '职位名称',
+	`position_info` varchar(128) COMMENT '职位信息',
+	`position_requirement` varchar(128) COMMENT '职位信息',
 	`is_listed` int(2) DEFAULT '0' COMMENT '是否上市',
-	`minimum salary` int(8) DEFAULT '0' COMMENT '最低薪资',
-	`maximum salary` int(8) DEFAULT '0' COMMENT '最高薪资',
+	`minimum_salary` int(8) DEFAULT '0' COMMENT '最低薪资',
+	`maximum_salary` int(8) DEFAULT '0' COMMENT '最高薪资',
 	`address` varchar(128) NOT NULL COMMENT '地址',
-	`minimum experience` int(8) DEFAULT '0' COMMENT '最低经验',
-	`maximum experience` int(8) DEFAULT '0' COMMENT '最高经验',
+	`minimum_experience` int(8) DEFAULT '0' COMMENT '最低经验',
+	`maximum_experience` int(8) DEFAULT '0' COMMENT '最高经验',
 	`degree` varchar(16) NOT NULL COMMENT '学历',
 	`welfare_label` varchar(128) NOT NULL COMMENT '地址',
 	`is_delete` int(2) DEFAULT '0' COMMENT '是否删除',
@@ -159,10 +174,30 @@ CREATE TABLE `sys_company_recruit` (
 	`update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
 	`remark` varchar(500) DEFAULT '' COMMENT '备注',
 	PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='企业产品表';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='企业职位表';
 
--- -----------------
--- -----------------
+DROP TABLE IF EXISTS `sys_interview`;
+CREATE TABLE `sys_interview` (
+	`id` bigint(20) NOT NULL AUTO_INCREMENT,
+	`company_id` bigint(20) NOT NULL COMMENT '企业ID',
+	`position_id` bigint(20) NOT NULL COMMENT '职位ID',
+	`user_id` bigint(20) NOT NULL COMMENT '用户ID',
+	`statue` int(4) DEFAULT '0' COMMENT '状态',
+	`resume_id` bigint(20) NOT NULL COMMENT '简历ID',
+	`resume_share` int(2) DEFAULT '0' COMMENT '是否分享简历',
+	`interview_experience` varchar(500) NOT NULL COMMENT '面试经验',
+	`company_condition` varchar(128) COMMENT '公司环境',
+	`salary` int(8) DEFAULT '0' COMMENT '薪资待遇',
+	`interview_num` int(4) DEFAULT '0' COMMENT '几轮面试',
+	`entry_intention` int(8) DEFAULT '0' COMMENT '入职意向',
+	`is_delete` int(2) DEFAULT '0' COMMENT '是否删除',
+	`create_time` timestamp NULL DEFAULT NULL,
+	`update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+	`remark` varchar(500) DEFAULT '' COMMENT '备注',
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='面试表';
+
+
 DROP TABLE IF EXISTS `sys_user_info`;
 CREATE TABLE `sys_user_info` (
 	`id` bigint(20) NOT NULL AUTO_INCREMENT,
