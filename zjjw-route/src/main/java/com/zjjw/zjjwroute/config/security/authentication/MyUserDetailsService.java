@@ -1,8 +1,6 @@
-package com.zjjw.zjjwserver.config.security.authentication;
+package com.zjjw.zjjwroute.config.security.authentication;
 
-import com.zjjw.zjjwserver.po.Role;
-import com.zjjw.zjjwserver.services.RoleService;
-import com.zjjw.zjjwserver.services.UserService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -22,22 +20,12 @@ import java.util.List;
 @Service
 public class MyUserDetailsService implements UserDetailsService {
 
-    @Autowired
-    UserService userService;
-    @Autowired
-    RoleService roleService;
-
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        com.zjjw.zjjwserver.po.User user = userService.getByUsername(username);
-        if (user == null) {
-            throw new UsernameNotFoundException("用户名或者密码不正确");
-        }
-        String password = user.getPassword();
-        boolean enabled = user.getEnabled();
+        String password = "";
+        boolean enabled = true;
         List<GrantedAuthority> authorities = new ArrayList<>();
-        List<Role> roles = roleService.getRolesByUserId(user.getId());
-        String[] strArray = roles.toArray(new String[roles.size()]);
+        String[] strArray = {};
         return User.withUsername(username).password(password).roles(strArray).disabled(enabled).accountExpired(true).accountLocked(true).credentialsExpired(true).build();
     }
 }

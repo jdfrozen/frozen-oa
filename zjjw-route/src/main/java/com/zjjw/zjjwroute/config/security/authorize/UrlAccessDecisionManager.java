@@ -1,4 +1,4 @@
-package com.zjjw.zjjwserver.config.security.authorize;
+package com.zjjw.zjjwroute.config.security.authorize;
 
 import org.springframework.security.access.AccessDecisionManager;
 import org.springframework.security.access.AccessDeniedException;

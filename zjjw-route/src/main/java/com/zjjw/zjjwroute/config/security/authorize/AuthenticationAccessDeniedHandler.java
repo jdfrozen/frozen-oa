@@ -1,10 +1,11 @@
-package com.zjjw.zjjwserver.config.security.authorize;
+package com.zjjw.zjjwroute.config.security.authorize;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.zjjw.zjjwroute.common.RespBean;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.stereotype.Component;
-import com.zjjw.zjjwserver.common.RespBean;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;

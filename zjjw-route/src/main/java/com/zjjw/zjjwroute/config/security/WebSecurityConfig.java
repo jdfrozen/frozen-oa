@@ -1,12 +1,12 @@
-package com.zjjw.zjjwserver.config.security;
+package com.zjjw.zjjwroute.config.security;
 
-import com.zjjw.zjjwserver.config.security.authentication.MyAuthenticationFailureHandler;
-import com.zjjw.zjjwserver.config.security.authentication.MyAuthenticationSuccessHandler;
-import com.zjjw.zjjwserver.config.security.authentication.MyLogoutSuccessHandler;
-import com.zjjw.zjjwserver.config.security.authentication.MyUserDetailsService;
-import com.zjjw.zjjwserver.config.security.authorize.AuthenticationAccessDeniedHandler;
-import com.zjjw.zjjwserver.config.security.authorize.CustomMetadataSource;
-import com.zjjw.zjjwserver.config.security.authorize.UrlAccessDecisionManager;
+import com.zjjw.zjjwroute.config.security.authentication.MyAuthenticationFailureHandler;
+import com.zjjw.zjjwroute.config.security.authentication.MyAuthenticationSuccessHandler;
+import com.zjjw.zjjwroute.config.security.authentication.MyLogoutSuccessHandler;
+import com.zjjw.zjjwroute.config.security.authentication.MyUserDetailsService;
+import com.zjjw.zjjwroute.config.security.authorize.AuthenticationAccessDeniedHandler;
+import com.zjjw.zjjwroute.config.security.authorize.CustomMetadataSource;
+import com.zjjw.zjjwroute.config.security.authorize.UrlAccessDecisionManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.ObjectPostProcessor;

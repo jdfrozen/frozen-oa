@@ -1,7 +1,7 @@
-package com.zjjw.zjjwserver.config.security.authentication;
+package com.zjjw.zjjwroute.config.security.authentication;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.zjjw.zjjwserver.common.RespBean;
+import com.zjjw.zjjwroute.common.RespBean;
 import org.springframework.security.authentication.*;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
