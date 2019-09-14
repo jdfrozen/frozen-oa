@@ -37,7 +37,7 @@ public class FIMServer {
     private EventLoopGroup work = new NioEventLoopGroup();
 
 
-    @Value("${fim.server.port}")
+    @Value("${zjjw.server.port}")
     private int nettyPort;
 
 
