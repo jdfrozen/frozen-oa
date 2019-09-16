@@ -1,4 +1,4 @@
-package com.zjjw.zjjwroute.ctl;
+package com.zjjw.zjjwroute.controller;
 
 import com.zjjw.common.enmus.StatusEnum;
 import com.zjjw.common.res.BaseResponse;
