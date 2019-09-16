@@ -18,9 +18,4 @@ public class WebMvcConfig implements WebMvcConfigurer {
     public void addFormatters(FormatterRegistry registry) {
         registry.addConverter(new DateConverter());
     }
-
-    @Bean
-    public ExecutorService executorService() {
-        return Executors.newCachedThreadPool();
-    }
 }
