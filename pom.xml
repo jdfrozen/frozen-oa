@@ -28,6 +28,8 @@
     <modules>
         <module>zjjw-common</module>
         <module>zjjw-route</module>
+        <module>zjjw-server</module>
+        <module>frozen-admin</module>
     </modules>
 
 
