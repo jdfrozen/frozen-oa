@@ -1,10 +1,11 @@
-package com.frozen.frozenadmin.config.security.authorize;
+package com.frozen.frozenadmin.config.security.authentication;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.frozen.frozenadmin.common.RespBean;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.stereotype.Component;
-import com.frozen.frozenadmin.common.RespBean;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;

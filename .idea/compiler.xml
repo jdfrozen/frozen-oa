@@ -18,7 +18,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="frozen-admin" options="-parameters" />
       <module name="frozen-eureka" options="-parameters" />
-      <module name="zjjw-route" options="" />
+      <module name="zjjw-common" options="-parameters" />
+      <module name="zjjw-route" options="-parameters" />
       <module name="zjjw-server" options="-parameters" />
     </option>
   </component>
