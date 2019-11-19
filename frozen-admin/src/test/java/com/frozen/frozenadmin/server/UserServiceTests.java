@@ -42,18 +42,6 @@ public class UserServiceTests {
             }
         }
     }
-    @Test
-    public void test(){
-        initUser();
-        insert();
-        update();
-        getUserById();
-        getByUsername();
-        list();
-        listAll();
-        listByIds();
-        delete();
-    }
 
     @Test
     public void insert(){
@@ -62,31 +50,5 @@ public class UserServiceTests {
     @Test
     public void update(){
         userMapper.update(user);
-    }
-    @Test
-    public void getUserById(){
-        log.info(userMapper.getUserById(user.getId()).toString());
-    }
-    @Test
-    public void getByUsername(){
-        log.info(userMapper.getByUsername(user.getName()).toString());
-    }
-    @Test
-    public void list(){
-        log.info(userMapper.list(user).toString());
-    }
-    @Test
-    public void listAll(){
-        log.info(userMapper.listAll(user).toString());
-    }
-    @Test
-    public void listByIds(){
-        List<Long> ids =new ArrayList<>();
-        ids.add(user.getId());
-        log.info(userMapper.listByIds(ids).toString());
-    }
-    @Test
-    public void delete(){
-        userMapper.delete(user.getId());
     }
 }
